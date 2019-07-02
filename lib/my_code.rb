@@ -1,8 +1,8 @@
-def map(source_array, block)
+def map(array, block)
   i = 0
   new_array = []
-  while i < source_array.length do
-    new_array.push(yield(source_array[i]))
+  while i < array.length do
+    new_array.push(yield(array[i]))
     i +=1 
   end
   return new_array  
